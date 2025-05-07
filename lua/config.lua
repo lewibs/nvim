@@ -9,5 +9,6 @@ vim.opt.expandtab = true          -- Convert tabs to spaces (style)
 vim.opt.tabstop = 4               -- Number of spaces per tab (style)
 vim.opt.shiftwidth = 0            -- Use tabstop value for autoindent (style)
 
+vim.g.mapleader = " "
 
 
