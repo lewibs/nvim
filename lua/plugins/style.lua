@@ -36,4 +36,20 @@ return {
             require("gitsigns").setup()
         end,
     },
+
+    -- Syntax for languages
+    {
+      "nvim-treesitter/nvim-treesitter",
+      build = ":TSUpdate",
+      config = function()
+        local configs = require("nvim-treesitter.configs")
+
+        configs.setup({
+          ensure_installed = { "java", "lua" },
+          sync_install = false,
+          highlight = { enable = true },
+          indent = { enable = true },
+        })
+      end
+    }
 }
