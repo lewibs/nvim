@@ -11,10 +11,34 @@ return {
                     theme = "gruvbox",
                     section_separators = '',
                     component_separators = '',
-                }
+                },
+                sections = {
+                    lualine_a = { "mode" },
+                    lualine_b = { "branch" },
+                    lualine_c = { "filename" },
+                    lualine_x = {
+                        require("wpm").wpm,  -- 🚀 Add WPM display here
+                        "encoding", "fileformat", "filetype"
+                    },
+                    lualine_y = { "progress" },
+                    lualine_z = { "location" },
+               }
             })
         end,
     },
+
+    {
+        "jcdickinson/wpm.nvim",
+        event = "VeryLazy",
+        config = function()
+            require("wpm").setup({
+                update_interval = 100,         -- How often to update WPM (lower = faster)
+                progress_view = true,          -- Shows the WPM meter bar
+                display_format = "WPM: %d"     -- Customize how WPM is shown
+            })
+        end,
+    },
+
 
     -- 📐 Indent guides
     {
