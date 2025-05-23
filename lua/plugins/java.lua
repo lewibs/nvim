@@ -30,7 +30,6 @@ return {
           bundles = bundles,
         },
       })
-
       -- Java-specific DAP config
       local dap = require("dap")
       dap.configurations.java = {
