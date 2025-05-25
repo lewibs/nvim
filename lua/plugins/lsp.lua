@@ -13,16 +13,16 @@ return {
     -- })
 
     -- Add more servers here if needed
-    -- Rust
-    lspconfig.rust_analyzer.setup({
-      capabilities = capabilities,
-      settings = {
-        ["rust-analyzer"] = {
-          cargo = { allFeatures = true },
-          checkOnSave = { command = "clippy" },
-        },
-      },
-    })
+    -- Rust I use mason else where??
+    -- lspconfig.rust_analyzer.setup({
+    --   capabilities = capabilities,
+    --   settings = {
+    --     ["rust-analyzer"] = {
+    --       cargo = { allFeatures = true },
+    --       checkOnSave = { command = "clippy" },
+    --     },
+    --   },
+    -- })
   end, 
 }
 
