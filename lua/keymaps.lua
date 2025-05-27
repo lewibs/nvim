@@ -36,7 +36,6 @@ vim.keymap.set("n", "<C-m>", function() require("harpoon.ui").nav_prev() end, { 
 -- vim.keymap.set("n", "<C-2>", function() require("harpoon.ui").nav_file(2) end, { desc = "Go to file 2" })
 -- vim.keymap.set("n", "<C-3>", function() require("harpoon.ui").nav_file(3) end, { desc = "Go to file 3" })
 
-
 -- fugitive
 vim.keymap.set("n", "<leader>git", "<cmd>Git<cr>", { desc = "Open git controls" })
 
@@ -47,5 +46,6 @@ vim.keymap.set("n", "<leader>t", "<cmd>NvimTreeToggle<CR>", { desc = "ToggleNvim
 vim.keymap.set("n", "<leader>t", "<cmd>UndoTreeToggle<cr>", { desc = "Toggle Undotree" })
 
 
-
+-- Other
+vim.keymap.set("n", "<CR>", "i", { noremap = true, silent = true })
 
