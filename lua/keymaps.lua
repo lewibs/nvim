@@ -12,5 +12,7 @@ vim.keymap.set("n", "<leader>c~", function()
     vim.cmd("vsp | terminal codex")
 end)
 
--- delete without yanking
-vim.keymap.set({"n", "v"}, "d", '"_d')
+-- Do NOT yank on delete or change:
+vim.keymap.set({"n", "v", "o"}, "d", '"_d')
+vim.keymap.set({"n", "v", "o"}, "c", '"_c')
+vim.keymap.set({"n", "v"}, "x", '"_x')  
