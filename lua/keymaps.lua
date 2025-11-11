@@ -4,7 +4,7 @@ vim.keymap.set("n", "<leader>ts", function()
 end)
 
 vim.keymap.set("n", "<leader>tt", function()
-    vim.cmd("split | terminal $SHELL")
+  vim.cmd("terminal cd " .. vim.fn.expand("%:p:h") .. " && $SHELL")
 end)
 
 -- chatgpt
