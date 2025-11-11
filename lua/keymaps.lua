@@ -4,6 +4,4 @@ vim.keymap.set("n", "<leader>t", function()
   vim.cmd("split | terminal cd " .. vim.fn.expand("%:p:h") .. " && $SHELL")
 end)
 
-vim.keymap.set("n", "<leader>c", function()
-    vim.cmd("vsp | terminal codex")
-end)
+
