@@ -16,4 +16,4 @@ vim.opt.autoindent = true     -- Copy indent from current line when starting a n
 vim.opt.clipboard = "unnamedplus" -- use system clipboard
 vim.g.mapleader = " "
 
-
+vim.opt.wrap = false
